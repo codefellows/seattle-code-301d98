@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lecture Videos</title>
+  <link rel="stylesheet" href="https://codefellows.github.io/code-201-guide/assets/css/style.css" />
+  <style>
+    li {
+      margin-bottom: 1em;
+    }
+
+    body {
+      padding: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Course Lecture Videos</h1>
+  <main>
+    <!-- module links go here -->
+  </main>
+
+  <script>
+    async function getP() {
+      const response = await fetch('https://codefellows-lecture-videos.s3.us-west-2.amazonaws.com/index.html');
+      const pc = await response.text();
+      console.log(response);
+      return pc;
+    }
+
+    async function getLectures() {
+      const passcode = await getP();
+      const response = await fetch('./lectures.json', { mode: 'no-cors' })
+      const data = await response.json();
+      document.getElementsByTagName('main')[0].innerHTML = render(data.lectures, passcode);
+    }
+
+    const formatTitle = (title) => {
+      return title.toLocaleUpperCase();
+    };
+
+    const render = (modules, passcode) => {
+      let html = '';
+      const params = (new URL(document.location)).searchParams;
+      const moduleNumber = params.get('module') || "01";
+      const module = `module-${moduleNumber}`;
+      html += `<h2>Module ${moduleNumber}</h2>\n<ul>`
+      for (let classDay in modules[module]) {
+        let [title, classNum] = classDay.split('-');
+        title = title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
+        let date = new Date(Number(modules[module][classDay].primary.date)).toLocaleDateString();
+        html += `
+          <li>
+            <strong><a href="${modules[module][classDay].primary.link}">${title} ${classNum}</a></strong>:
+            ${modules[module][classDay].primary.instructor} (${date})
+          </li>
+        `;
+      }
+      html += `</ul>`;
+      html += `<h3>Passcode for all videos: ${passcode}</h3>`;
+      return html;
+
+    }
+
+    getLectures();
+  </script>
+</body>
+
+</html>

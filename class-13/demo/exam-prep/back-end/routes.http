@@ -1,0 +1,31 @@
+POST http://localhost:3001/snacks
+content-type: application/json
+
+{
+    "name": "snickers",
+    "description": "Frozen, please"
+}
+
+###
+GET http://localhost:3001/snacks
+
+###
+GET http://localhost:3001/snacks/60904a38bfce22a9e9efe6bf
+
+###
+
+
+###
+
+PUT http://localhost:3001/snacks/60904a38bfce22a9e9efe6bf
+content-type: application/json
+
+{
+    "name": "snickers",
+    "description": "Frozen, please!!!!"
+}
+
+###
+
+DELETE http://localhost:3001/snacks/60904a38bfce22a9e9efe6bf
+

@@ -1,0 +1,47 @@
+[
+  {
+    "restaurant": "Pink Door",
+    "cuisines": "Italian",
+    "locality": "Pike Place Market"
+  },
+  {
+    "restaurant": "Serious Pie",
+    "cuisines": "Pizza, Italian",
+    "locality": "Belltown"
+  },
+  {
+    "restaurant": "Salumi",
+    "cuisines": "Sandwich, Deli, Italian",
+    "locality": "Pioneer Square"
+  },
+  {
+    "restaurant": "Lola",
+    "cuisines": "Greek, Mediterranean, Pacific Northwest",
+    "locality": "Hotel Andra"
+  },
+  {
+    "restaurant": "Wild Ginger",
+    "cuisines": "Vietnamese, Chinese, Asian",
+    "locality": "Downtown"
+  },
+  {
+    "restaurant": "Purple Cafe and Wine Bar",
+    "cuisines": "Pacific Northwest, American",
+    "locality": "Downtown"
+  },
+  {
+    "restaurant": "Le Pichet",
+    "cuisines": "Cafe, French",
+    "locality": "Pike Place Market"
+  },
+  {
+    "restaurant": "Cafe Campagne",
+    "cuisines": "French, Cafe",
+    "locality": "Pike Place Market"
+  },
+  {
+    "restaurant": "Dahlia Lounge",
+    "cuisines": "Seafood, Pacific Northwest",
+    "locality": "Belltown"
+  }
+]
