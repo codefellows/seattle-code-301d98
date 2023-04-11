@@ -46,7 +46,7 @@ export default class Main extends Component {
 class BeastImage extends Component {
 
   constructor(props) {
-    super(constructor);
+    super(props);
     this.state = {
       "status": "Yay"
     }
