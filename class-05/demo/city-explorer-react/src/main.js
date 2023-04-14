@@ -10,14 +10,18 @@ class Main extends React.Component {
     super(props);
     this.state = {
       displayResults: false,
-      locationObj: location,
-      restaurants: restaurants
+      locationObj: null,
+      restaurants: null
     }
   }
 
   handleLocationSearch = (e) => {
     e.preventDefault();
-    this.setState({ displayResults: true });
+    this.setState({
+      displayResults: true,
+      locationObj: location,
+      restaurants: restaurants,
+    });
   }
 
   render(){
