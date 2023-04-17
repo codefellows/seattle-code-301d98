@@ -1,5 +1,13 @@
 # Asynchronous Code and Third Party APIs
 
+## In class takeaways
+
+- [Pass by Value vs Reference Replit](https://replit.com/@arpatterson31/Class-301d98-Pass-By-Value-vs-Reference#index.js)
+- [In Class Demo - API calls](inclass-demo/src/)
+- [WRRC Whiteboard](whiteboards/module2-wrrc.png)
+- [Rest Verb Whiteboard](whiteboards/rest-verbs.png)
+- [URL Anatomy Whiteboard](whiteboards/url-anatomy.png)
+
 ## Overview
 
 For this class we will explore third party APIs and how to request data from them.
