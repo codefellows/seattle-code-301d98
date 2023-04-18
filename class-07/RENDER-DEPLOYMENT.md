@@ -1,0 +1,35 @@
+# Render(Server Deployment)
+
+- While it's nice to keep your code running locally for ease of editing, you'll need to publish to a production environment to share with the world.
+- We will use <https://render.com/> to host our server application.
+  - Use the "Get Started" button if it's your first time.
+    - Sign up for Render using your GitHub credentials.
+    - Click the "Authorize Render" button.
+    - Then confirm your email by clicking the "Complete Sign Up" button.
+    - Go to the associated email inbox to find the "Activate your Render account" verification email.
+    - Verify by clicking on the link in the email.
+      - That link will take you to the Dashboard.
+  - If this is not your first time, log into your Render Account.
+  - Create a new "Web Service"
+  - If its your first time, click "Configure Account".
+    - Configure by choosing your personal GitHub account.
+    - Select "Only select repositories" unless you would rather to have all repos available.
+    - Select the repo to deploy by typing it's name into the input field.
+    - Click "Install" at the very bottom.
+    - Put in your GitHub password when prompted.
+  - Connect to your Github repository by clicking the "Connect" button next to the repo you want to deploy.
+  - Fill out the name input field with a unique name for your web service.
+  - Choose "Node" as your runtime environment.
+  - Choose the "main" branch.
+  - Enter `npm install` as the "Build Command".
+  - Enter `npm start` as the "Start Command".
+  - Under "Plan Type", leave "Free" as the selected option.
+  - Scroll down to the bottom and click the "Advanced" dropdown menu.
+    - Add `.env` variables by click the "Add Environment Variable" button.
+    - Select "yes" for "Auto-Deploy".
+  - Click on the "Create Web Service" button.
+  - When you see the "Build successful 🎉" message at the bottom of the logs, you are good to go!
+    - This could take about 5 minutes.
+  - Add "PR Preview" for you feature branches in GitHub.
+    - Select "PRs" from the left side menu.
+    - Click "Enable Pull Request Previews".
