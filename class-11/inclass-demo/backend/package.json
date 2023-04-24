@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^7.0.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "cats-backend-301d88",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpatterson31/cats-backend-301d88.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arpatterson31/cats-backend-301d88/issues"
+  },
+  "homepage": "https://github.com/arpatterson31/cats-backend-301d88#readme"
+}
